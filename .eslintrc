@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "prettier"
+  ],
+  "plugins": ["react", "react-hooks", "import"],
+  "rules": {
+    "no-unused-vars": "warn"
+  },
+  "parser": "@babel/eslint-parser",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  }
+}
